@@ -14,3 +14,60 @@ na palavra secreta.
 Faça a contagem de tentativas do seu
 usuário.
 """
+
+palavra = 'perfume'
+letra_acertada = ''
+tentativas = 0
+
+while True: 
+    letra_digitada = input('digite uma letra: ')
+    
+    tentativas += 1
+    
+    
+    if len(letra_digitada) > 1:
+        print('digite apenas uma letra')
+        continue
+
+    if letra_digitada in palavra:
+        letra_acertada += letra_digitada
+    
+    palavra_formada = ''
+    for letra_secreta in palavra:
+        if letra_secreta in letra_acertada:
+            palavra_formada += letra_secreta
+        else:
+            palavra_formada += '*'
+            
+    print(f'Palavra formada: {palavra_formada}')
+    
+    if palavra_formada == palavra:
+        print('VOCÊ GANHOU!')
+        print(f'A palavra era: {palavra_formada}')
+        print(f'tentativas: {tentativas}')
+        letra_acertada = ''
+        tentativas = 0
+
+
+for i in palavra:
+    
+    
+    if letra_digitada == palavra.find('p'):
+        print(f'{letra_digitada}*')
+    elif letra_digitada == palavra.find('e'):
+        print(f'{letra_digitada}*')
+    elif letra_digitada == palavra.find('r'):
+        print(f'{letra_digitada}*')
+    elif letra_digitada == palavra.find('f'):
+        print(f'{letra_digitada}*')
+    elif letra_digitada == palavra.find('u'):
+        print(f'{letra_digitada}*')
+    elif letra_digitada == palavra.find('m'):
+        print(f'{letra_digitada}*')
+    elif letra_digitada == palavra.find('e'):
+        print(f'{letra_digitada}*')
+    else:
+        print('sla')
+        
+    if letra_digitada.find == 'perfume':
+        print('parabens!')

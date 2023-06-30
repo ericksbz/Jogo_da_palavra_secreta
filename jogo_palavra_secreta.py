@@ -47,27 +47,3 @@ while True:
         print(f'tentativas: {tentativas}')
         letra_acertada = ''
         tentativas = 0
-
-
-for i in palavra:
-    
-    
-    if letra_digitada == palavra.find('p'):
-        print(f'{letra_digitada}*')
-    elif letra_digitada == palavra.find('e'):
-        print(f'{letra_digitada}*')
-    elif letra_digitada == palavra.find('r'):
-        print(f'{letra_digitada}*')
-    elif letra_digitada == palavra.find('f'):
-        print(f'{letra_digitada}*')
-    elif letra_digitada == palavra.find('u'):
-        print(f'{letra_digitada}*')
-    elif letra_digitada == palavra.find('m'):
-        print(f'{letra_digitada}*')
-    elif letra_digitada == palavra.find('e'):
-        print(f'{letra_digitada}*')
-    else:
-        print('sla')
-        
-    if letra_digitada.find == 'perfume':
-        print('parabens!')
